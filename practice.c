@@ -26,3 +26,23 @@ int main()
     }
     printf( "The value is %d palindrom",ans);
 }
+
+#include <stdio.h>
+int main()
+{
+    char name[12];
+    int i=0;
+    int grade,sum=0;
+    float average;
+    printf("Please enter the student's name:");
+    scanf("%s",name);
+    while(i<5)
+    {
+        printf("please enter the %d grade:",i+1);
+        scanf("%d",&grade);
+        sum=sum+grade;
+        i++;
+    }
+    average=sum/5;
+    printf("The name of student is %s and average is %f.",name,average);
+}
